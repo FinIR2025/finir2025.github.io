@@ -773,3 +773,7 @@ button:focus,
     text-align : center;
     top        : 65%;
     }
+
+.center-cell {
+    vertical-align: middle;
+}
