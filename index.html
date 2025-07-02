@@ -64,6 +64,7 @@
                         <li><a class="page-scroll" href="#section-speaker">Keynote Speakers</a></li>
                         
                         <li><a class="page-scroll" href="#section-call">Call for Papers</a></li>
+                        <li><a class="page-scroll" href="#section-accept">Accepted Papers</a></li>
 
                         <!-- <li><a class="page-scroll" href="#section-competition">Grand Challenge</a></li> -->
                         <li><a class="page-scroll" href="#section-days">Important Dates</a></li>
@@ -169,128 +170,29 @@ table.gridtable td {
 .table th, .table td {
     color: #000; /* 设置黑色字体 */
 }
+
+.paper {
+    margin-bottom: 20px;
+}
+.title::before {
+    content: "• ";
+    color: #003366;
+    margin-right: 5px;
+}
+.title {
+    font-weight: bold;
+    font-size: 18px;
+    text-align: left; /* 明确设置左对齐 */
+}
+.authors {
+    margin-top: 3px;
+    font-size: 16px;
+    text-align: left; /* 明确设置左对齐 */
+    color: #000000; /* 设置为黑色 */
+    margin-left: 18px; /* 与标题对齐 */
+}
 </style>
-
-
-<!-- <section id="section-program" class="section-wrapper about-event">
-     <div class="container">
-            <div class="row">
-                <div class="col-md-12">
-                    <h2>Program</h2>
-                    <table class="gridtable">
-                        <tr>
-                            <th>8:30 - 8:35 Welcome and Opening</th>
-                        </tr>
-                        <tr>
-                            <th>8:35 – 9:05 Invited Talk 1 by Dr. Edgar Meij (Bloomberg)</th>
-                        </tr>
-                        <tr>
-                            <td>Search and Discovery for Finance <a href="https://youtu.be/2O5aDEfwMFk" target="_blank">video</a></td>
-                        </tr>
-                        <tr>
-                            <th>9:05 – 9:35 Invited Talk 2 by Dr. Longbing Cao (University of Technology Sydney Australia)</th>
-                        </tr>
-                        <tr>
-                            <td>Title: Cross-market High-dimensional Nonstationary Coupling Learning <a href="./slides/longbing.pdf" target="_blank">slides</a></td>
-                        </tr>
-                        <tr>
-                            <th>9:35 - 10:05 Invited Talk 3 by Dr. Haiqin Yang (Ping An Life Insurance of China)</th>
-                        </tr>
-                        <tr>
-                            <td>AI Technologies Empower Professional Services Insurance in Ping An Life <a href="./slides/haiqin.pdf" target="_blank">slides</a></td>
-                        </tr>
-                        <tr>
-                            <th>10:05 – 10:35 Invited Talk 4 by Dr. Ben Tan (WeBank)</th>
-                        </tr>
-                        <tr>
-                            <td>Federated Recommender System <a href="./slides/ben.pdf" target="_blank">slides</a></td>
-                        </tr>
-                        <tr>
-                            <th>10:35 – 10:55 Introduction of Grand Challenge by Mr.Jiangeng Chang <a href="./slides/chang.pdf" target="_blank">slides</a></td>
-                        </tr>
-                        <tr>
-                            <th>10:55 – 11:10 Talk 1: Winner Solution 1 by team maimang <a href="./slides/maimang.pdf" target="_blank">slides</a></td>
-                        </tr>
-                        <tr>
-                            <th>11:10-11:25 Talk 2: Winner Solution 2 by team USTC_我爱吃火锅 <a href="./slides/huoguo_new.pdf" target="_blank">slides</a></th>
-                        </tr>
-                        <tr>
-                            <th>11:25-11:40 Talk 3: Winner Solution 3 by team USTC_youdu <a href="./slides/youdu.pdf" target="_blank">slides</a></th>
-                        </tr>
-                        <tr>
-                            <th>
-                                11:40 - 12:00 Discussion and Summarization
-                            </th>
-                        </tr>
-                    </table>
-                </div>
-            </div>
-        </div>
-    </section> -->
-    
-    <!--section id="section-research-keynote" class="section-wrapper about-event">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12">
-                    <h2>Research Keynote</h2>
-                    <p class="lead">
-                        <strong>Title</strong>: Survey Equivalence: An Information-theoretic Measure of Classifier Accuracy When the Ground Truth is Subjective
-                    </p>
-                    <p class="lead">
-                        <strong>Abstract</strong>: Many classification tasks have no objective ground truth. Examples include: which content or explanation is "better" according to some community? is this comment toxic? what is the political leaning of this news article? The traditional modeling approach assumes each item has an objective true state that is perceived by humans with some random error. It fails to account for the fact that people have greater agreement on some items than others. I will describe an alternative model where the true state is a distribution over labels that raters from a specified population would assign to an item. This leads to information gain as a theoretically justified and computationally tractable measure of a classifier's quality, and an intuitive interpretation of information gain in terms of the sample size for a survey that would yield the same expected error rate.
-                    </p>
-                    <p class="lead">
-                        <strong>Bio</strong>: <strong>Prof. Paul Resnick</strong> is the Michael D. Cohen Collegiate Professor of Information and Associate Dean for Research at the University of Michigan School of Information. He was a pioneer in the fields of recommender systems and reputation systems. He recently started the Center for Social Media Responsibility, which encourages and helps social media platforms to meet their public responsibilities.
-                    </p>
-                </div>                
-            </div>
-        </div>
-    </section-->
-    <!-- .about-event -->
-    
-    <!--section id="section-industry-keynote" class="section-wrapper about-event">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12">
-                    <h2>Industry Keynote</h2>
-                    <p class="lead">
-                        <strong>Title</strong>: Shakespeare of Alibaba: Practice of Intelligent Recommendation Reason Generation in Alibaba
-                    </p>
-                    <p class="lead">
-                        <strong>Abstract</strong>: Explainable recommendation and search is a very promising topic in both academia and industry in the recent years. There are many human generated recommendation reasons for products in Alibaba Taobao to improve user experience and to increase user stickiness. However, relying on human-generated content will result in low coverage, low quality stability, and high financial expenditure. With the rapid development of deep learning technology in NLP, especially in the nature language generation field, we tried natural language generation approach in recommendation reason generation and achieved good results. We created recommendation reasons for auction and auction list, which covered millions of product categories in Taobao e-commerce, and the generated explanations were used for large-scale real-world trasactions in "2017 Double 11 Shopping Festival" without any manual checking. Industry-level real system experiments show that it was very difficult to distinguish whether the explanations are machine-generated or manually-written, and the content generation can be controlled in multiple dimensions such as text style, text length, topics, etc. We will introduce our solution and technical details about generating free-text explanations in this keynote.
-                    </p>
-                    <p class="lead">
-                        <strong>Bio</strong>: <strong>Dr. Qingsong Hua</strong> has been working in Alibaba search algorithm team since 2013 and has led a lot of projects about search relevance, quality, and conversion effectiveness. He is responsible for the intelligent recommendation reason generation project, which won the biggest Alibaba technical award in "2017 Double 11 Online Shopping Festival". He is now responsible for the overall international search algorithm team in Alibaba.
-                    </p>
-                </div>                
-            </div>
-        </div>
-    </section-->
-    <!-- .about-event -->
-    
-    <!--section id="section-accepted-papers" class="section-wrapper about-event">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12">
-                    <h2>Accepted Papers</h2>
-                    <p class="lead">
-                        <ol>
-                            <li><strong><a href="./ears18-bountouridis.pdf">Explaining Credibility in News Articles using Cross-Referencing</a></strong>. <br/>Dimitrios Bountouridis (Delft University of Technology), Monica Marrero (Delft University of Technology), Nava Tintarev (Delft University of Technology), and Claudia Hauff (Delft University of Technology)</li>
-                            <li><strong><a href="">Explainable Information Retrieval using X-rays of Documents</a></strong>. <br/>Noriaki Kawamae (The University of Tokyo)</li>
-                            <li><strong><a href="./ears18-singh.pdf">Posthoc Interpretability of Learning to Rank Models using Secondary Training Data</a></strong>. <br/>Jaspreet Singh (L3S Research Centre) and Avishek Anand (L3S Research Centre)</li>
-                            <li><strong><a href="./ears18-bharadhwaj.pdf">Layer-wise Relevance Propagation for Explainable Recommendations</a></strong>. <br/>Homanga Bharadhwaj (Indian Institute of Technology Kanpur)</li>
-                            <li><strong><a href="./ears18-liu1.pdf">Correlated Topic Modelling via Householder Flow</a></strong>. <br/>Luyang Liu (Beijing Institute of technology), Heyan Huang (Beijing Institute of technology), and Yang Gao (Beijing Institute of technology)</li>
-                            <li><strong><a href="./ears18-wang.pdf">Explainable Recommendation via Multi-Task Learning in Opinionated Text Data</a></strong> (invited talk). <br/>Nan Wang (Shanghai Jiao Tong University), Hongning Wang (University of Virginia), Yiling Jia (University of Virginia) and Yue Yin (University of Virginia)</li>
-                            <li><strong><a href="./ears18-shan.pdf">User-Oriented Explanation for Intelligent Candidate Recommendation in Liepin.com</a></strong>. <br/>Roy Shan (Liepin.com), Xueyan Xu (Liepin.com) and Zhijie Li (Liepin.com)</li>
-                        </ol>
-                    </p>
-                </div>                
-            </div>
-        </div>
-    </section-->
-    <!-- .about-event -->
-
-    <section id="section-program" class="section-wrapper about-event">
+    <section id="section-program" class="section-wrapper about-event  gray-bg">
         <div class="container">
             <div class="col-md-12">
                 <div class="row">
@@ -422,7 +324,7 @@ table.gridtable td {
     </section>
 
 
-    <section id="section-speaker" class="section-wrapper team gray-bg">
+    <section id="section-speaker" class="section-wrapper team">
          <div class="container">
         <div class="col-md-12">
             <div class="row ">
@@ -516,7 +418,7 @@ table.gridtable td {
    </div> 
         </section>
 
-    <section id="section-call" class="section-wrapper about-event">
+    <section id="section-call" class="section-wrapper about-event  gray-bg">
         <div class="container">
              <div class="col-md-12">
                     <div class="row ">
@@ -598,6 +500,60 @@ table.gridtable td {
         </div>
     </section>
     <!-- .call-for-papers -->
+
+<section id="section-accept" class="section-wrapper">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="section-title">
+                    <h1>ACCEPTED PAPERS</h1>
+
+                    <div class="paper">
+                        <div class="title">Are LLMs Rational Investors? A Study on the Financial Bias in LLMs</div>
+                        <div class="authors">Yuhang Zhou, Meng Zhang and Guangnan Ye</div>
+                    </div>
+
+                    <div class="paper">
+                        <div class="title">Financial Risk Identification through Dual-view Adaptation</div>
+                        <div class="authors">Wei-Ning Chiu, Yu-Hsiang Wang, Yi-Tai Hsiao, Yu-Shiang Huang and Chuan-Ju Wang</div>
+                    </div>
+
+                    <div class="paper">
+                        <div class="title">FinLight: Bridging the Annotation Gap for Highlight Extraction in Financial Reports</div>
+                        <div class="authors">Yu-Shiang Huang, Yu-Hsiang Wang, Yi-Tai Hsiao, Che Lin and Chuang-Ju Wang</div>
+                    </div>
+
+                    <div class="paper">
+                        <div class="title">Testing the Effectiveness of Knowledge Editing in Financial Polarity Editing</div>
+                        <div class="authors">Taiki Hirama, Tomoki Ito, Hiroki Sakaji and Itsuki Noda</div>
+                    </div>
+
+                    <div class="paper">
+                        <div class="title">Agentic Retrieval of Topics and Insights from Earning Calls</div>
+                        <div class="authors">Anant Gupta, Rajarshi Bhowmik and Geoffrey Gunow</div>
+                    </div>
+
+                    <div class="paper">
+                        <div class="title">FinS-Pilot: A Benchmark for Online Financial System</div>
+                        <div class="authors">Feng Wang, Yiding Sun, Wei Xue, Danqing Xu and Jiaxin Mao</div>
+                    </div>
+
+                    <div class="paper">
+                        <div class="title">Towards Temporal-Aware Multi-Modal Retrieval Augemented Generation in Finance</div>
+                        <div class="authors">Fengbin Zhu, Junfeng Li, Liangming Pan, Wenjie Wang, Fuli Feng, Chao Wang, Huanbo Luan and Tat Seng Chua</div>
+                    </div>
+
+                    <div class="paper">
+                        <div class="title">Structuring the Unstructured: A Multi-Agent System for Extracting and Querying Financial KPIs and Guidance</div>
+                        <div class="authors">Chanyeol Choi, Jihoon Kwon, Minjae Kim, Juneha Hwang, Minsoo Ha, Chaewoon Kim, Jaeseon Ha, Suyeol Yun and Jin Kim</div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+
+    </div>
+</section>
 
  <section id="section-days" class="section-wrapper about-event gray-bg">
         <div class="container">
